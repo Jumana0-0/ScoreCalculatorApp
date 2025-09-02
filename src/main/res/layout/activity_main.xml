@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:text=" Score Calculator"
+        android:gravity="center_horizontal"
+        android:background="#303F9F"
+        android:textColor="@color/white"
+        android:id="@+id/tv_AppName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--team A-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Team_A"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_margin="30dp"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:text="Team A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <!--team A score-->
+                <TextView
+                    android:id="@+id/tv_ScoreTeamA"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:text="+6"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnsix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+3"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+2"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btntwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+1"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--divider-->
+            <View
+                android:background="@color/black"
+                android:padding="5dp"
+                android:layout_margin="8dp"
+                android:id="@+id/v_divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <!--team B-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Team_B"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_margin="30dp"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:text="Team B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!--team B score-->
+                <TextView
+                    android:id="@+id/tv_ScoreTeamB"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+6"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnsixB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+3"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnthreeB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+2"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btntwoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="+1"
+                    android:layout_margin="5dp"
+                    android:textSize="35sp"
+                    android:id="@+id/btnoneB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_margin="5dp"
+        android:text="Reset"
+        android:textSize="35sp"
+        android:padding="10dp"
+        android:id="@+id/btnreset"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
